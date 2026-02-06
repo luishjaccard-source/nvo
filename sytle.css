@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(fundo.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna (um embaixo do outro) */
+  align-items: center;    /* Centraliza a foto e os botões horizontalmente */
+  gap: 20px;              /* Espaço entre a foto e os botões */
+  width: 90%;
+}
+
+.foto {
+  width: 200px;           /* Tamanho da foto */
+  height: 200px;
+  border-radius: 50%;      /* Deixa a foto redondinha */
+  object-fit: cover;       /* Não deixa a imagem distorcer */
+  border: 4px solid #000;  /* Borda preta pra combinar com os botões */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  margin-bottom: 10px;     /* Espacinho extra antes de começar os botões */
+}
+
+.cilindro {
+  width: 100%;
+  max-width: 600px;        /* Largura máxima de 600px como você pediu */
+  height: 80px;
+  background: linear-gradient(to bottom, #000000, #4f4f4f);
+  border-radius: 100px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.cilindro:hover {
+  transform: scale(1.05);
+}
